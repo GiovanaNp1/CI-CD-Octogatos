@@ -34,3 +34,13 @@ jobs:
     - run: npm run test-ci
       env:
         MONGO: ${{ secrets.MONGO }}
+    - uses: Yleisradio/github-action-trello-integration@v1.1.0
+      with:
+        action: issue_opened_create_card
+    - env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
+          TRELLO_API_TOKEN: ${{ secrets.TRELLO_API_TOKEN }}
+          TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
+          # Backlog list ID
+          TRELLO_LIST_ID: ${{ secrets.TRELLO_LIST_ID }}
