@@ -35,8 +35,8 @@ jobs:
         env:
           MONGO: ${{ secrets.MONGO }}
 
-      - uses: Yleisradio/github-action-trello-integration@v1.1.0
       - name: Trello
+        uses: Yleisradio/github-action-trello-integration@v1.1.0
         with:
           action: issue_opened_create_card
         env:
