@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "8104c7ac-fdc6-406e-a8d2-6b989beab175",
+		"name": "TDD-TDC-Innovation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Kiki\" ,\n    \"gander\": \"Female\",\n    \"age\": \"13\",\n    \"eye_color\": \"Black\",\n    \"hair_color\": \"Brown\",\n    \"mundo\": \"França\",\n    \"familia\" :[\n        \"Mãe\",\n        \"Pai\"\n    ],\n    \"image\": \"https://img.quizur.com/f/img5f753e95548be9.48222079.jpg?lastEdited=1601519256\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"people"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

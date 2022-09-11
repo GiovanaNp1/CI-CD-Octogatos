@@ -1,0 +1,36 @@
+{
+  "name": "tdd-studio-ghilbi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "jest": {
+    "setupFiles": [
+      "dotenv/config"
+    ],
+    "testTimeout": 30000,
+    "testMatch": [
+      "**/__tests__/**/*.[jt]s?(x)",
+      "**/?(*.)+(spec|test).[jt]s?(x)",
+      "!**/utilities.ts"
+    ]
+  },
+  "scripts": {
+    "test": "jest --setupFiles dotenv/config --silent=false --watchAll --env=node --coverage",
+    "test-ci": "jest --setupFiles dotenv/config --coverage  --env=node --silent --forceExit",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.0.1"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1",
+    "nodemon": "^2.0.15"
+  }
+}
