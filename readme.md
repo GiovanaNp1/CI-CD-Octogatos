@@ -1,6 +1,6 @@
 # Pull Requests Amigáveis e inteligentes com CI-CD, Actions e Qualidade de Software
 
-![](https://octodex.github.com/images/NUX_Octodex.gif)
+![](https://i.pinimg.com/originals/2d/8e/e8/2d8ee815146390d567706f2c7b5c2916.gif)
 
 ## Sobre
 Projeto feito para demonstração de Boas praticas para um Pull Request na palestra Pull Requests Amigáveis e inteligentes com CI-CD, Actions e Qualidade de Software da Octogatos Conf 2022.
@@ -33,8 +33,6 @@ Versão do NPM - 8.10.0
 - 🐱 [Github Actions](https://github.com/features/actions)
   
 ## Sobre como eu montei essa API e conceitos de Back-end 🦋
-
-![](https://scontent.fcgh33-1.fna.fbcdn.net/v/t39.30808-6/241051286_4218510624903652_2100273646610012703_n.png?_nc_cat=106&ccb=1-7&_nc_sid=2d5d41&efg=eyJpIjoidCJ9&_nc_eui2=AeHEbhzBNp-DeGSqZpHrcpfEmiBHG4BECWiaIEcbgEQJaMvH85rw3xIxscMhAcI6Igg80Qw4A8NKEU7J2_4HlAAH&_nc_ohc=i_qoCIXwz44AX8yIUzs&_nc_ht=scontent.fcgh33-1.fna&oh=00_AT_Toy6g2SWH4AswCkdcBJUpX9H9hqa-EBHxrtgbkydtAA&oe=629B86C2)
 
 https://www.youtube.com/watch?v=mZh4Wd_Ijxk&t=1s
 
