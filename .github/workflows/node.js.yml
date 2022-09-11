@@ -20,27 +20,29 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: echo "This is the $MONGO environment variable"
-      env:
-        MONGO: ${{ secrets.MONGO }}
-    - run: npm run test-ci
-      env:
-        MONGO: ${{ secrets.MONGO }}
-    - uses: Yleisradio/github-action-trello-integration@v1.1.0
-      with:
-        action: issue_opened_create_card
-    - env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
-          TRELLO_API_TOKEN: ${{ secrets.TRELLO_API_TOKEN }}
-          TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
-          # Backlog list ID
-          TRELLO_LIST_ID: ${{ secrets.TRELLO_LIST_ID }}
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: echo "This is the $MONGO environment variable"
+        env:
+          MONGO: ${{ secrets.MONGO }}
+      - run: npm run test-ci
+        env:
+          MONGO: ${{ secrets.MONGO }}
+
+      - uses: Yleisradio/github-action-trello-integration@v1.1.0
+      - name: Trello
+        with:
+          action: issue_opened_create_card
+      - env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
+            TRELLO_API_TOKEN: ${{ secrets.TRELLO_API_TOKEN }}
+            TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
+            # Backlog list ID
+            TRELLO_LIST_ID: ${{ secrets.TRELLO_LIST_ID }}
