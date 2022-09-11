@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1654451140292" clover="3.2.0">
-  <project timestamp="1654451140292" name="All files">
+<coverage generated="1662929575519" clover="3.2.0">
+  <project timestamp="1662929575520" name="All files">
     <metrics statements="26" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="28" coveredelements="27" complexity="0" loc="26" ncloc="26" packages="4" files="4" classes="4"/>
     <package name="TDC-with-TDD">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="routes.js" path="/Users/giovanapena/Documents/projetos/TDC-with-TDD/routes.js">
+      <file name="routes.js" path="/Users/giovanapena/Documents/projetos/ci-cd/TDC-with-TDD/routes.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -16,7 +16,7 @@
     </package>
     <package name="TDC-with-TDD.controller">
       <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="peopleController.js" path="/Users/giovanapena/Documents/projetos/TDC-with-TDD/controller/peopleController.js">
+      <file name="peopleController.js" path="/Users/giovanapena/Documents/projetos/ci-cd/TDC-with-TDD/controller/peopleController.js">
         <metrics statements="13" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -35,7 +35,7 @@
     </package>
     <package name="TDC-with-TDD.mock">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="mock.people.js" path="/Users/giovanapena/Documents/projetos/TDC-with-TDD/mock/mock.people.js">
+      <file name="mock.people.js" path="/Users/giovanapena/Documents/projetos/ci-cd/TDC-with-TDD/mock/mock.people.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
@@ -45,7 +45,7 @@
     </package>
     <package name="TDC-with-TDD.model">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="people.js" path="/Users/giovanapena/Documents/projetos/TDC-with-TDD/model/people.js">
+      <file name="people.js" path="/Users/giovanapena/Documents/projetos/ci-cd/TDC-with-TDD/model/people.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>

@@ -17,7 +17,8 @@
   "scripts": {
     "test": "jest --setupFiles dotenv/config --silent=false --watchAll --env=node --coverage",
     "test-ci": "jest --setupFiles dotenv/config --coverage  --env=node --silent --forceExit",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "lint": "eslint . --ext .js --fix"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +30,7 @@
   "dependencies": {
     "axios": "^0.26.1",
     "dotenv": "^16.0.0",
+    "eslint": "^8.23.0",
     "express": "^4.17.3",
     "mongoose": "^6.3.1",
     "nodemon": "^2.0.15"

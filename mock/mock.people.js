@@ -10,7 +10,7 @@ let mockPostPeople = {
         "Pai"
     ],
     "image": "https://img.quizur.com/f/img5f753e95548be9.48222079.jpg?lastEdited=1601519256"
-}
+};
 
 exports.mockPostPeople = mockPostPeople;
 
@@ -26,6 +26,6 @@ let mockPostPeopleErro = {
         "Pai"
     ],
     "image": "https://img.quizur.com/f/img5f753e95548be9.48222079.jpg?lastEdited=1601519256"
-}
+};
 
 exports.mockPostPeopleErro = mockPostPeopleErro;

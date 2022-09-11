@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const PeopleSchema = mongoose.Schema({
     name:  String,
@@ -11,6 +11,6 @@ const PeopleSchema = mongoose.Schema({
     image: String,
 
     // size: [{type: mongoose.Types.Decimal128}],
-})
+});
 
-module.exports = mongoose.model('People', PeopleSchema)
+module.exports = mongoose.model("People", PeopleSchema);
