@@ -31,6 +31,9 @@ jobs:
       - run: echo "This is the $MONGO environment variable"
         env:
           MONGO: ${{ secrets.MONGO }}
+      - run: echo "This is the $TRELLO_BOARD_ID environment variable"
+      - run: echo "This is the $GITHUB_TOKEN environment variable"
+      - run: echo "This is the $TRELLO_LIST_ID environment variable"
       - run: npm run test-ci
         env:
           MONGO: ${{ secrets.MONGO }}
@@ -39,9 +42,6 @@ jobs:
         uses: Yleisradio/github-action-trello-integration@v1.1.0
         with:
           action: issue_opened_create_card
-      - run: echo "This is the $TRELLO_BOARD_ID environment variable"
-      - run: echo "This is the $GITHUB_TOKEN environment variable"
-      - run: echo "This is the $TRELLO_LIST_ID environment variable"
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
