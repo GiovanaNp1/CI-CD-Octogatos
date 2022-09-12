@@ -38,3 +38,12 @@ jobs:
         with:
           message: eslint
       - run: npm run lint 
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.4.0
+        with:
+          target: 'https://www.zaproxy.org/'
+      - name: SonarCloud Scan
+        uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
