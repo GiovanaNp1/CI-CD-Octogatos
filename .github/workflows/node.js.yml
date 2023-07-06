@@ -28,7 +28,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - name: Jest Test
       - run: npm ci
       - run: npm run build --if-present
       - run: echo "This is the $MONGO environment variable"
@@ -40,7 +39,6 @@ jobs:
       - run: echo "This is the $SONAR_TOKEN environment variable"
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-      - name: Eslint
       - uses: getsentry/action-git-diff-suggestions@main
         with:
           message: eslint
